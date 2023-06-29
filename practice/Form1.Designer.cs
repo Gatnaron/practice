@@ -36,12 +36,8 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.factoryDBDataSet = new practice.factoryDBDataSet();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.employeesTableAdapter = new practice.factoryDBDataSetTableAdapters.EmployeesTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,40 +54,44 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.factoryDBDataSet1 = new practice.factoryDBDataSet1();
+            this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.employeesTableAdapter = new practice.factoryDBDataSet1TableAdapters.EmployeesTableAdapter();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.factoryDBDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.factoryDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -161,21 +161,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(392, 298);
             this.dataGridView2.TabIndex = 2;
             // 
-            // employeesBindingSource
-            // 
-            this.employeesBindingSource.DataMember = "Employees";
-            this.employeesBindingSource.DataSource = this.bindingSource1;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = this.factoryDBDataSet;
-            this.bindingSource1.Position = 0;
-            // 
-            // factoryDBDataSet
-            // 
-            this.factoryDBDataSet.DataSetName = "factoryDBDataSet";
-            this.factoryDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(82, 365);
@@ -189,10 +174,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(148, 20);
             this.textBox2.TabIndex = 6;
-            // 
-            // employeesTableAdapter
-            // 
-            this.employeesTableAdapter.ClearBeforeFill = true;
             // 
             // label1
             // 
@@ -334,100 +315,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Поиск";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Location = new System.Drawing.Point(3, 19);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(226, 98);
-            this.groupBox3.TabIndex = 21;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "По изделию";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.textBox12);
-            this.groupBox4.Controls.Add(this.textBox10);
-            this.groupBox4.Controls.Add(this.button5);
-            this.groupBox4.Location = new System.Drawing.Point(3, 129);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(226, 127);
-            this.groupBox4.TabIndex = 22;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "По детали";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(6, 64);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(214, 23);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Поиск";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(6, 97);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(214, 23);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Поиск";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(9, 38);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(211, 20);
-            this.textBox9.TabIndex = 21;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(6, 34);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(214, 20);
-            this.textBox10.TabIndex = 22;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(6, 71);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(214, 20);
-            this.textBox12.TabIndex = 23;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 22);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 13);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Система связи";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(12, 57);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 13);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "Изделие";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(12, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 13);
-            this.label13.TabIndex = 27;
-            this.label13.Text = "Система связи";
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button8);
@@ -445,6 +332,36 @@
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "По ФИО";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(151, 101);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(69, 52);
+            this.button8.TabIndex = 24;
+            this.button8.Text = "Поиск в Деталях";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(78, 101);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(69, 52);
+            this.button7.TabIndex = 23;
+            this.button7.Text = "Поиск в Изделиях";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(3, 101);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(69, 52);
+            this.button6.TabIndex = 22;
+            this.button6.Text = "Поиск в Системах связи";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label9
             // 
@@ -494,15 +411,99 @@
             this.textBox13.Size = new System.Drawing.Size(154, 20);
             this.textBox13.TabIndex = 11;
             // 
-            // button6
+            // groupBox4
             // 
-            this.button6.Location = new System.Drawing.Point(3, 101);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(69, 52);
-            this.button6.TabIndex = 22;
-            this.button6.Text = "Поиск в Системах связи";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Controls.Add(this.textBox12);
+            this.groupBox4.Controls.Add(this.textBox10);
+            this.groupBox4.Controls.Add(this.button5);
+            this.groupBox4.Location = new System.Drawing.Point(3, 129);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(226, 127);
+            this.groupBox4.TabIndex = 22;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "По детали";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(12, 18);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(84, 13);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Система связи";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 57);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(51, 13);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "Изделие";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(6, 71);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(214, 20);
+            this.textBox12.TabIndex = 23;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(6, 34);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(214, 20);
+            this.textBox10.TabIndex = 22;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(6, 97);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(214, 23);
+            this.button5.TabIndex = 21;
+            this.button5.Text = "Поиск";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Location = new System.Drawing.Point(3, 19);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(226, 98);
+            this.groupBox3.TabIndex = 21;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "По изделию";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 13);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Система связи";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(9, 38);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(211, 20);
+            this.textBox9.TabIndex = 21;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(6, 64);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(214, 23);
+            this.button4.TabIndex = 20;
+            this.button4.Text = "Поиск";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label14
             // 
@@ -519,26 +520,6 @@
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(135, 20);
             this.textBox14.TabIndex = 23;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(78, 101);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(69, 52);
-            this.button7.TabIndex = 23;
-            this.button7.Text = "Поиск в Изделиях";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(151, 101);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(69, 52);
-            this.button8.TabIndex = 24;
-            this.button8.Text = "Поиск в Деталях";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // groupBox5
             // 
@@ -559,6 +540,25 @@
             this.groupBox5.TabIndex = 25;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Добавление";
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = this.factoryDBDataSet1;
+            this.bindingSource1.Position = 0;
+            // 
+            // factoryDBDataSet1
+            // 
+            this.factoryDBDataSet1.DataSetName = "factoryDBDataSet1";
+            this.factoryDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // employeesBindingSource
+            // 
+            this.employeesBindingSource.DataMember = "Employees";
+            this.employeesBindingSource.DataSource = this.bindingSource1;
+            // 
+            // employeesTableAdapter
+            // 
+            this.employeesTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -585,18 +585,18 @@
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.factoryDBDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.factoryDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -612,10 +612,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private factoryDBDataSet factoryDBDataSet;
-        private System.Windows.Forms.BindingSource employeesBindingSource;
-        private factoryDBDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -655,6 +651,10 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private factoryDBDataSet1 factoryDBDataSet1;
+        private System.Windows.Forms.BindingSource employeesBindingSource;
+        private factoryDBDataSet1TableAdapters.EmployeesTableAdapter employeesTableAdapter;
     }
 }
 

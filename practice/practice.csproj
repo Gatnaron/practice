@@ -53,6 +53,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>factoryDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="factoryDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>factoryDBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +88,17 @@
     </None>
     <None Include="factoryDBDataSet.xss">
       <DependentUpon>factoryDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="factoryDBDataSet1.xsc">
+      <DependentUpon>factoryDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="factoryDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>factoryDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="factoryDBDataSet1.xss">
+      <DependentUpon>factoryDBDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

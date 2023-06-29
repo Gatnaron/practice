@@ -32,5 +32,16 @@ namespace practice.Properties {
                 return ((string)(this["factoryDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=\"192.168.0.101, 1411\";Initial Catalog=factoryDB;User ID=sa;Password=1" +
+            "4112003")]
+        public string factoryDBConnectionString1 {
+            get {
+                return ((string)(this["factoryDBConnectionString1"]));
+            }
+        }
     }
 }

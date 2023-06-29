@@ -14,7 +14,7 @@ namespace practice
 {
     public partial class Form1 : Form
     {
-        public SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["practice.Properties.Settings.factoryDBConnectionString"].ConnectionString);
+        public SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["practice.Properties.Settings.factoryDBConnectionString1"].ConnectionString);
         SqlCommand command = new SqlCommand();
         private SqlDataAdapter adapter = null;
         private DataTable dt = null;
@@ -26,6 +26,8 @@ namespace practice
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "factoryDBDataSet1.Employees". При необходимости она может быть перемещена или удалена.
+            this.employeesTableAdapter.Fill(this.factoryDBDataSet1.Employees);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "factoryDBDataSet.Employees". При необходимости она может быть перемещена или удалена.
             //this.employeesTableAdapter.Fill(this.factoryDBDataSet.Employees);
             FillE();
